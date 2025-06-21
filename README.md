@@ -6,41 +6,50 @@
 
 A high-level defensive cybersecurity tool that monitors **canary files** placed in sensitive directories to detect early signs of ransomware activity.
 
+> 🚨 Get alerted the moment ransomware starts to strike.
+
 ---
 
 ## 📊 Visual Overview (Diagram Placeholder)
-```
+
 +-----------------+
-|  config.yaml    |
+| config.yaml |
 +--------+--------+
-         |
-         v
+|
+v
 +--------+--------+
-|  Canary Monitor |
+| Canary Monitor |
 +--------+--------+
-         |
-         v
+|
+v
 +--------+--------+
-|  Alert Engine   |--> Email / Log / Shutdown
+| Alert Engine |--> Email / Log / Shutdown
 +-----------------+
-```
+
 
 ---
 
 ## ✅ Features
-- Canary file monitoring
-- Real-time event logging
-- Email/shutdown alert system
-- YAML-based configuration
-- Lightweight and easy to deploy
+
+- Canary file monitoring  
+- Real-time event logging  
+- Email/shutdown alert system  
+- YAML-based configuration  
+- Lightweight and easy to deploy  
+
+---
 
 ## 🎯 Use Cases
-- Students & Learners
-- SOC Analysts & Blue Teamers
-- Malware Researchers
-- Personal or Enterprise use
+
+- Students & Learners  
+- SOC Analysts & Blue Teamers  
+- Malware Researchers  
+- Personal or Enterprise use  
+
+---
 
 ## 🖼️ Demo Screenshot (Placeholder)
+
 ![Demo](docs/demo.png)
 
 ---
@@ -48,18 +57,15 @@ A high-level defensive cybersecurity tool that monitors **canary files** placed 
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/Ranchiro/ransomware-canary-detector.git
-cd ransomware-canary-detector
 python -m venv venv
 source venv/bin/activate  # or venv\Scripts\activate on Windows
 pip install -r requirements.txt
-```
 
-## 🧩 Configuration
-Edit the `config.yaml` file as needed.
+🧩 Configuration
 
-### Example `config.yaml`:
-```yaml
+Edit the config.yaml file as needed.
+Example config.yaml:
+
 monitor_paths:
   - "/home/user/Documents/"
   - "C:/Users/YourName/Desktop/"
@@ -74,31 +80,32 @@ alert:
 
 shutdown_on_alert: false
 log_file: "./logs/activity.log"
-```
 
-## 🚀 Usage
+🚀 Usage
 
-```bash
 python main.py
-```
 
-## 📤 Output
-- Logs every event in `/logs/activity.log`
-- Email/shutdown triggered upon canary file interaction
+📤 Output
 
----
+    Logs every event in /logs/activity.log
 
-## 👨‍💻 Author
-**Ruchir Ganatra**  
-- 🌐 [Linktree](https://linktr.ee/ruchir.ganatra)
-- ✍️ [Medium](https://ruchirganatra.medium.com)
-- 💻 [GitHub](https://github.com/Ranchiro)
+    Email/shutdown triggered upon canary file interaction
 
-## 📜 License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+👨‍💻 Author
 
----
+Ruchir Ganatra
 
-## 🙏 Credits
-- Python community for `watchdog`, `pyyaml`
-- Open-source inspiration from Sysmon & Blue Teams
+    🌐 Linktree
+
+    ✍️ Medium
+
+    💻 GitHub
+
+📜 License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+🙏 Credits
+
+    Python community for watchdog, pyyaml
+
+    Open-source inspiration from Sysmon & Blue Teams
