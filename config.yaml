@@ -1,0 +1,15 @@
+watch_paths:
+  - "C:/vs ruchir/my project Ransomware Canary Detector/test"
+canary_files:
+  - "C:/vs ruchir/my project Ransomware Canary Detector/test/_canary.txt"
+
+alerts:
+  # - email
+  # - shutdown
+
+# email:
+#   from: "your_email@gmail.com"
+#   to: "your_alert_receiver@gmail.com"
+#   password: "your_app_password"
+#   smtp_server: "smtp.gmail.com"
+#   smtp_port: 587
